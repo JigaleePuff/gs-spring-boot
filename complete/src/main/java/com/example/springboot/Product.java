@@ -1,4 +1,7 @@
+package com.example.springboot;
+
 public class Product {
+    
     private int id;
     private String name;
     private String description;
@@ -38,24 +41,5 @@ public class Product {
     // Added Getters and setters
 }
 
-public class Consumption {
-    private int id;
-    private int productId;
-    private int userId;
-    private int quantity;
-    private LocalDateTime timestamp;
-    
-    // Getters and setters
-}
 
-public class Exchange {
-    private int id;
-    private int senderUserId;
-    private int receiverUserId;
-    private int productGivenId;
-    private int productReceivedId;
-    private LocalDateTime timestamp;
-    
-    // Getters and setters
-}
 

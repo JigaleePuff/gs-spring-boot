@@ -1,15 +1,14 @@
 package com.example.springboot;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-
-import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
 @RestController
-@RequestMapping("/products")
+@RequestMapping
 public class ProductController {
 
     private final JsonDataService jsonDataService;
@@ -20,9 +19,10 @@ public class ProductController {
 
     @GetMapping
     public List<Product> getAllProducts() {
+      
         return jsonDataService.getAllProducts();
     }
-
+   
     @PostMapping
     public Product addProduct(@RequestBody Product product) {
         List<Product> products = jsonDataService.getAllProducts();
