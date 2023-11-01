@@ -1,0 +1,54 @@
+
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Organic Shampoo",
+        "description": "A natural and eco-friendly shampoo.",
+        "price": 12.99,
+        "rating": 4.5
+      },
+      {
+        "id": 2,
+        "name": "Recycled Paper Towels",
+        "description": "Environmentally friendly paper towels.",
+        "price": 3.99,
+        "rating": 4.0
+      },
+      {
+        "id": 3,
+        "name": "Reusable Water Bottle",
+        "description": "BPA-free and reusable water bottle.",
+        "price": 9.99,
+        "rating": 4.7
+      }
+    ],
+    "consumption": [
+      {
+        "id": 1,
+        "productId": 1,
+        "userId": 1,
+        "quantity": 2,
+        "timestamp": "2023-10-23T10:15:00Z"
+      },
+      {
+        "id": 2,
+        "productId": 2,
+        "userId": 2,
+        "quantity": 5,
+        "timestamp": "2023-10-23T11:30:00Z"
+      }
+    ],
+    "exchange": [
+      {
+        "id": 1,
+        "senderUserId": 1,
+        "receiverUserId": 2,
+        "productGivenId": 3,
+        "productReceivedId": 2,
+        "timestamp": "2023-10-23T14:45:00Z"
+      }
+    ],
+    "java.compile.nullAnalysis.mode": "automatic"
+  }
+  
